@@ -1,7 +1,7 @@
 var MajorColors=require('./MajorColors.js');
 var MinorColors=require('./MinorColors.js');
 
-function GetColorFromPairNumber(pairNumber) {
+function getColorFromPairNumber(pairNumber) {
     let colorPair = {};
     const zeroBasedPairNumber = pairNumber - 1;
     const majorColorIndex =
@@ -11,4 +11,4 @@ function GetColorFromPairNumber(pairNumber) {
     return colorPair
 }
 
-module.exports=GetColorFromPairNumber;
+module.exports=getColorFromPairNumber;
