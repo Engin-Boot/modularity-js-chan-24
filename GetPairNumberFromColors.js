@@ -1,20 +1,20 @@
-var MajorColors=require('./MajorColors.js');
-var MinorColors=require('./MinorColors.js');
+var majorColors=require('./majorColors.js');
+var minorColors=require('./minorColors.js');
 
-function GetPairNumberFromColors(majorColor, minorColor) {
+function getPairNumberFromColors(majorColor, minorColor) {
     let majorIndex = 0;
     let minorIndex = 0;
-    for(majorIndex = 0; majorIndex < MajorColors.length; majorIndex++) {
-        if(MajorColors[majorIndex] == majorColor) {
+    for(majorIndex = 0; majorIndex < majorColors.length; majorIndex++) {
+        if(majorColors[majorIndex] == majorColor) {
             break;
         }
     }
-    for(minorIndex = 0; minorIndex < MinorColors.length; minorIndex++) {
-        if(MinorColors[minorIndex] == minorColor) {
+    for(minorIndex = 0; minorIndex < minorColors.length; minorIndex++) {
+        if(minorColors[minorIndex] == minorColor) {
             break;
         }
     }
-    return majorIndex * MinorColors.length + minorIndex + 1;
+    return majorIndex * minorColors.length + minorIndex + 1;
 }
 
-module.exports=GetPairNumberFromColors;
+module.exports=getPairNumberFromColors;
