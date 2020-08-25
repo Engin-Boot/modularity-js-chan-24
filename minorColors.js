@@ -1,4 +1,4 @@
-const MinorColors = [
+const minorColors = [
     "blue",
     "orange",
     "green",
@@ -6,4 +6,4 @@ const MinorColors = [
     "slate"
 ];
 
-module.exports=MinorColors;
+module.exports=minorColors;
