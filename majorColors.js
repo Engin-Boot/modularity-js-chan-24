@@ -1,4 +1,4 @@
-const MajorColors = [
+const majorColors = [
     "white",
     "red",
     "black",
@@ -6,4 +6,4 @@ const MajorColors = [
     "violet"
 ];
 
-module.exports=MajorColors;
+module.exports=majorColors;
